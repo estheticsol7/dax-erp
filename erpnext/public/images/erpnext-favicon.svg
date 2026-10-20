@@ -1,5 +1,78 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 12C0 5.37258 5.37258 0 12 0H88C94.6274 0 100 5.37258 100 12V88C100 94.6274 94.6274 100 88 100H12C5.37258 100 0 94.6274 0 88V12Z" fill="#171717"/>
-<path d="M65.7097 32.9462H67.3871V24H33V32.9462H43.9032H65.7097Z" fill="white"/>
-<path d="M43.9032 66.2151V53.914H65.7097V44.9677H43.9032H33V75.1613H67.6667V66.2151H43.9032Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">DAX-style geometric E logo</title>
+  <desc id="desc">A beveled lime-green upper bar separated from a glossy purple geometric letter E, on a transparent background.</desc>
+  <defs>
+    <linearGradient id="greenFace" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0" stop-color="#C5FF25"/>
+      <stop offset="0.45" stop-color="#8ED600"/>
+      <stop offset="1" stop-color="#5DA900"/>
+    </linearGradient>
+    <linearGradient id="greenBevel" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#E2FF78"/>
+      <stop offset="0.5" stop-color="#7FCA00"/>
+      <stop offset="1" stop-color="#275D00"/>
+    </linearGradient>
+    <linearGradient id="purpleFace" x1="0" y1="0" x2="1" y2="0.85">
+      <stop offset="0" stop-color="#C56BFF"/>
+      <stop offset="0.38" stop-color="#9B35F1"/>
+      <stop offset="0.75" stop-color="#7624D7"/>
+      <stop offset="1" stop-color="#5B13B8"/>
+    </linearGradient>
+    <linearGradient id="purpleBevel" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#F0B7FF"/>
+      <stop offset="0.24" stop-color="#A83CFF"/>
+      <stop offset="0.65" stop-color="#6E20C9"/>
+      <stop offset="1" stop-color="#31066F"/>
+    </linearGradient>
+    <linearGradient id="leftFace" x1="0" y1="0" x2="1" y2="0.7">
+      <stop offset="0" stop-color="#C879FF"/>
+      <stop offset="0.52" stop-color="#8D2DE6"/>
+      <stop offset="1" stop-color="#4B1095"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Optional soft grounding shadow; remove this element for a completely flat/transparent presentation. -->
+  <ellipse cx="600" cy="940" rx="390" ry="20" fill="#35105E" opacity=".10" filter="url(#softShadow)"/>
+
+  <!-- Separate green upper stroke -->
+  <g stroke-linejoin="round">
+    <path d="M300 285 L350 205 L1020 205 L960 335 L250 335 Z" fill="#376800" opacity=".95" transform="translate(0 12)"/>
+    <path d="M250 335 L300 285 L350 205 L1020 205 L960 335 Z" fill="url(#greenBevel)"/>
+    <path d="M300 285 L350 205 L1020 205 L960 335 L250 335 Z" fill="url(#greenFace)"/>
+    <path d="M350 205 L1020 205 L960 218 L359 218 L278 326 L250 335 L300 285 Z" fill="#E5FF73" opacity=".78"/>
+    <path d="M250 335 L960 335 L935 350 L268 350 Z" fill="#356D00" opacity=".92"/>
+    <path d="M960 335 L1020 205 L1034 210 L977 342 Z" fill="#245300"/>
+  </g>
+
+  <!-- Purple E body, intentionally separated from the green upper stroke -->
+  <g stroke-linejoin="round">
+    <!-- Deep extruded edges -->
+    <path d="M250 390 L1020 390 L968 475 L430 475 L430 565 L1020 565 L968 650 L430 650 L430 760 L1020 760 L960 900 L250 900 Z"
+          fill="#35106F" transform="translate(0 14)"/>
+    <!-- Outer bevel -->
+    <path d="M250 390 L1020 390 L968 475 L430 475 L430 565 L1020 565 L968 650 L430 650 L430 760 L1020 760 L960 900 L250 900 Z"
+          fill="url(#purpleBevel)"/>
+    <!-- Main front face -->
+    <path d="M250 390 L1020 390 L975 460 L390 460 L390 580 L975 580 L930 635 L390 635 L390 790 L975 790 L920 870 L250 870 Z"
+          fill="url(#purpleFace)"/>
+    <!-- Left spine facet -->
+    <path d="M250 390 L390 460 L390 790 L250 870 Z" fill="url(#leftFace)"/>
+    <path d="M250 390 L270 405 L270 850 L250 870 Z" fill="#E8A6FF" opacity=".82"/>
+    <!-- Upper arm highlight and right bevel -->
+    <path d="M250 390 L1020 390 L1007 402 L265 402 Z" fill="#F1B7FF" opacity=".9"/>
+    <path d="M975 460 L1020 390 L1032 395 L989 469 Z" fill="#4C0C99"/>
+    <path d="M975 580 L1020 565 L1004 591 L975 580 Z" fill="#4A0B92"/>
+    <!-- Middle arm bevel -->
+    <path d="M390 580 L975 580 L930 635 L390 635 Z" fill="#A13BEA" opacity=".92"/>
+    <path d="M390 635 L930 635 L945 649 L390 649 Z" fill="#430B89"/>
+    <!-- Lower arm facets -->
+    <path d="M390 790 L975 790 L920 870 L250 870 Z" fill="#A13BEF" opacity=".88"/>
+    <path d="M250 870 L920 870 L960 900 L250 900 Z" fill="#4A0B91"/>
+    <path d="M975 790 L1020 760 L960 900 L920 870 Z" fill="#4A0B91"/>
+    <path d="M390 790 L410 800 L270 888 L250 900 Z" fill="#E1A1FF" opacity=".85"/>
+  </g>
 </svg>
